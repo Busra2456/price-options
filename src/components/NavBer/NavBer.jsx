@@ -27,8 +27,7 @@ const NavBer = () => {
 
                   <div className="md:hidden"  onClick={() => setOpen(!open)}     >
 
-                        {
-                              open === true?<AiOutlineClose className="text-3xl" ></AiOutlineClose> : <AiOutlineMenu className="text-3xl  " ></AiOutlineMenu>
+ {    open === true?<AiOutlineClose className="text-3xl" ></AiOutlineClose> : <AiOutlineMenu className="text-3xl  " ></AiOutlineMenu>
                         }
 
 
@@ -39,10 +38,10 @@ const NavBer = () => {
                  
 
 
-             <ul className={`md:flex duration-1000 absolute md:static
+                  <ul className={`md:flex duration-1000 absolute md:static
              ${open ? 'top-16' : '-top-60'}
              bg-yellow-200 p-6 `} >  {routes.map(route =><Link key={route.id} route={route} ></Link> )
-                  } </ul>  
+                  } </ul>   
             </nav>
             
       );
